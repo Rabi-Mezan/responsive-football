@@ -11,13 +11,18 @@ header{
 }
 /* navbar styles start */
 
-nav{
+/* nav{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    font-size: 16px;
-    width: 1161px;
+    justify-content: space-around;
+    padding: 0px;
+    
+    position: absolute;
+    width: 1164px;
     height: 44px;
+    left: 156px;
+    top: 42px;
     
     
 }
@@ -39,9 +44,9 @@ nav .login{
     width: 123px;
     height: 44px;
     background-color: #E02C6D;
-}
+} */
 
-.login img{
+/* .login img{
     height: 16px;
     width: 16px;
     margin-right: 8px;
@@ -50,7 +55,7 @@ nav .login{
 
 .login p{
     padding-right:24px;
-}
+} */
 
 /* heading styles */
 .top-section{
@@ -115,10 +120,9 @@ nav .login{
 
 /* players section styles start */
 
-main{
-    margin-top: 70px;
-}
+
 .container{
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,3 +162,102 @@ font-weight: 700;
     font-size: 16px;
     font-weight: 200;
 }
+
+/* club schedule styles */
+.schedule-result-section{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 140px;
+}
+
+.field-image img{
+    height: 345px;
+    width: 90%;
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu1{
+    height: 50%;
+    width: 100%;
+    color: white;
+    
+}
+
+.club-schedule h2{
+    /* height: 30px; */
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.side-menu .club-schedule{
+    padding: 12px;
+    background-color:#3DBAFD ;
+}
+
+.club-schedule:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+.side-menu .weekly-result{
+    padding: 12px;
+    background-color:#E02C6D ;
+    margin-top: 15px;
+}
+
+.weekly-result:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+
+
+/* footer styles
+ */
+ footer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 158px;
+     margin-bottom: 63px;
+
+ }
+ footer img{
+    width: 483.87px;
+    height: 110px;
+ }
+
+ footer div   i{
+margin-right: 14px;
+ }
+
+ footer p{
+    font-size: 18px;
+ }
+
+ /* media queries styles start */
+
+ @media only screen and (max-width : 688px) {
+
+    .top-section{
+       display: grid;
+       grid-template-rows: repeat(2,1fr);
+        margin-left: 50px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+
+    .players{
+        grid-template-columns: 1fr;
+    }
+ footer img{
+    width: 200px;
+    height: 80px;
+ }
+ }
