@@ -7,7 +7,7 @@ body{
 
 /* header styles */
 header{
-    background-color: #000000;
+    background-color: #2D25A0;
 }
 /* navbar styles start */
 
@@ -28,6 +28,7 @@ nav{
     font-weight: 300;
     margin-right: 36px;
     color: white;
+    margin-top: 80px;
     
 }
 
@@ -60,15 +61,33 @@ nav .login{
     margin-right: 140px;
 }
 
-.top-section div{
+.top-section .heading-half{
     width: 50%;
+    
 }
-
+.heading-text{
+    margin-left: 156px;
+    margin-right: 102px;
+}
 .heading-title h1{
     font-size: 64px;
     color: #FFFFFF;
+    line-height: 80px;
+    font-weight: 700;
+    
     
 }
+.heading-half img{
+    width: 556px;
+    height: 438px;
+    margin-top: 67px;
+    margin-bottom: 86px;
+}
+.heading-half img:hover{
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
 
 .watch-live {
     display: flex;
@@ -77,8 +96,14 @@ nav .login{
     width: 164px;
     height: 44px;
     background-color: #E02C6D;
-    margin-top: -30px;
+     margin-top: -30px;
      
+}
+
+.watch-live:hover {
+    background-color: #3DBAFD;
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
 }
 
 .watch-live a{
@@ -88,9 +113,48 @@ nav .login{
     font-size: 16px;
 }
 
-.heading-image img{
-    width: 556.01px;
-    height: 438px;
-    margin-top: 67px;
-    margin-left: 102px;
+/* players section styles start */
+
+main{
+    margin-top: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 200px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+
+.player{
+    width: 330px;
+height: 474px;
+text-align: justify;
+background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-thumb img{
+    width: 300px;
+    height: 256px;
+}
+.player-info{
+    margin-top: 16px;
+}
+
+.card-container{
+    padding: 15px;
+}
+.player-name h1{
+font-size: 28px;
+font-weight: 700;
+}
+.card-container p{
+    font-size: 16px;
+    font-weight: 200;
 }
